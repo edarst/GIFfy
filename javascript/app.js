@@ -48,8 +48,6 @@ var food = ["cheeseburger", "steak", "sandwich", "taco", "burrito", "pizza", "ba
 			var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=20";
 			var topic = $("topic-input").val().toLowerCase().trim();
 
-		}
-
 		//AJAX call will pull the API from Giffy for user
 
 		$.ajax({
@@ -66,6 +64,7 @@ var food = ["cheeseburger", "steak", "sandwich", "taco", "burrito", "pizza", "ba
 
 		})
 
+		});
 		//function to display the gifs on the page
 
 		//console log out for testing
@@ -94,9 +93,7 @@ var food = ["cheeseburger", "steak", "sandwich", "taco", "burrito", "pizza", "ba
 				$(this).attr("data-state", "still");
 
 			}
-			}
-
-		};
+			};
 
 		//need on-click for topic class
 
