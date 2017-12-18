@@ -61,10 +61,44 @@ var food = ["cheeseburger", "steak", "sandwich", "taco", "burrito", "pizza", "ba
 		}).done(function (response) {
 
 
-			
+
 
 
 		})
+
+		//function to display the gifs on the page
+
+		//console log out for testing
+
+
+		//need variables for attribute data-still and data-animate
+
+
+		//append the divs to the gifs view ID
+
+
+		//this function will play and animate the gifs
+
+		function gifPlay () {
+
+			if ($(this).attr("data-state") == "still") {
+
+				$(this).html("<img src" + $(this).attr("data-animate"))
+				$(this).attr("data-state", "animate");
+
+			}
+
+			else {
+
+				$(this).html("<img src='" + $(this).attr("data-still") + "'>");
+				$(this).attr("data-state", "still");
+
+			}
+			}
+
+		};
+
+		//need on-click for topic class
 
 //run all JS functions
 
