@@ -45,8 +45,26 @@ var food = ["cheeseburger", "steak", "sandwich", "taco", "burrito", "pizza", "ba
 
 			//this keeps the button from performing unexpectedly
 			event.preventDefault();
+			var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=20";
+			var topic = $("topic-input").val().toLowerCase().trim();
 
 		}
+
+		//AJAX call will pull the API from Giffy for user
+
+		$.ajax({
+
+			url: queryURL,
+			method: "GET"
+
+
+		}).done(function (response) {
+
+
+			
+
+
+		})
 
 //run all JS functions
 
