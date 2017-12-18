@@ -40,3 +40,5 @@ var food = ["cheeseburger", "steak", "sandwich", "taco", "burrito", "pizza", "ba
 	}
 
 //run all JS functions
+
+makeButtons();
