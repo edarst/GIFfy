@@ -39,6 +39,15 @@ var food = ["cheeseburger", "steak", "sandwich", "taco", "burrito", "pizza", "ba
 
 	}
 
+		//passing through an on-click function to the add topic ID
+
+		$("#add-topic").on("click", function (event) {
+
+			//this keeps the button from performing unexpectedly
+			event.preventDefault();
+
+		}
+
 //run all JS functions
 
 makeButtons();
